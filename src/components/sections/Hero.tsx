@@ -4,6 +4,7 @@ import { heroBanner } from "@/assets"
 import { Dialog, DialogTrigger, DialogContent } from "@/components/ui/dialog"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 import ReactPlayer from "react-player"
+const Player = ReactPlayer as any;
 import { CirclePlay } from "lucide-react"
 import { motion } from "motion/react"
 import { type Variants, useScroll, useTransform, useSpring } from "framer-motion"
@@ -106,7 +107,7 @@ export const Hero = () => {
 
                             <DialogContent className="!p-0 overflow-hidden max-w-[640] xl-max-w-[1000px]">
                                 <AspectRatio ratio={16 / 9}>
-                                    <ReactPlayer
+                                    <Player
                                         url="https://youtu.be.com/cvd2XGJBgLg"
                                         width="100%"
                                         height="100%"

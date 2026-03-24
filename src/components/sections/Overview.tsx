@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 import ReactPlayer from "react-player"
+const Player = ReactPlayer as any;
 
 
 
@@ -73,7 +74,7 @@ export const Overview = () => {
 
                             <DialogContent className="!p-0 overflow-hidden max-w-[640] xl-max-w-[1000px]">
                                 <AspectRatio ratio={16 / 9}>
-                                    <ReactPlayer
+                                    <Player
                                         url="https://youtu.be.com/cvd2XGJBgLg"
                                         width="100%"
                                         height="100%"
